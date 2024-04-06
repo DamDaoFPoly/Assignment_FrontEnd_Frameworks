@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "name": "3 Người thầy vĩ đại",
+      "price": 40000,
+      "description": "Description",
+      "image": "ba-nguoi-thay-vi-dai_bia-1.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Chưa kịp lớp đã phải trưởng thành",
+      "price": 50000,
+      "description": "Description",
+      "image": "chx-kip-lon-da-phai-truong-thanh.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Nhà giả kim",
+      "price": 75000,
+      "description": "Description",
+      "image": "image_195509_1_36793.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Cây cam ngọt của tôi",
+      "price": 56000,
+      "description": "Description",
+      "image": "image_217480.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Và rồi núi vọng",
+      "price": 45000,
+      "description": "Description",
+      "image": "va-roi-nui-vong-1.jpg",
+      "id": "5"
+    },
+    {
+      "name": "Ước vọng",
+      "price": 45000,
+      "description": "Description",
+      "image": "uoc-vong.jpg",
+      "id": "6"
+    },
+    {
+      "name": "Bố tôi bắt cóc tôi",
+      "price": 50000,
+      "description": "Description",
+      "image": "anh-sach-toi-bi-bo-bat-coc-1-768x823.jpg",
+      "id": "4d96"
+    }
+  ]
+}

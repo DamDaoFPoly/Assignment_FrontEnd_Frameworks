@@ -1,0 +1,197 @@
+<main class="overflow-hidden">
+  <div class="de-bg w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="fs-1">Sách Tiểu thuyết</h2>
+          <span>Thư giãn - Cảm nhận</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Product Details-->
+  <div class="product-details container mt-5">
+    <div class="row">
+      <div class="row border border-dark-subtle rounded-3 bg-white mb-4 ">
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-inner border-2 shadow-sm p-3">
+              <div class="carousel-item active">
+                <img ng-model="p.image" src="/images/{{p.image}}" class="d-block" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="/images/toi-la-ai.jpg" class="d-block" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="/images/image_195509_1_36793.jpg" class="d-block" alt="..." />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="row de-slide ms-1 my-2">
+              <img data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active col" aria-current="true"
+                aria-label="Slide 1" src="/images/{{p.image}}" alt="" />
+              <img class="col" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                src="/images/toi-la-ai.jpg" alt="" />
+              <img class="col" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                src="/images/image_195509_1_36793.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="product_de p-3">
+            <h3>{{p.name}}</h3>
+            <div class="pro_de_rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+              <span>(18 đánh giá)</span>
+            </div>
+            <div class="pro_de_price text-danger my-3" ng-model="p.price">{{p.price}} đ</div>
+            <p>
+              Những cuốn sách về chữa lành không chỉ là nguồn cảm hứng mà còn là hướng dẫn thực tiễn để chúng ta có thể
+              hiểu về quá trình hồi phục của bản thân từ cảm xúc tiêu cực. Những lời khuyên và kinh nghiệm chia sẻ trong
+              sách sẽ giúp chúng ta tìm ra cách đối mặt và vượt qua những khó khăn, mang lại cho chúng ta sự tự tin và
+              niềm tin vào cuộc sống mới.
+            </p>
+            <div class="row my-3">
+              <div class="col-4 quantity d-flex align-items-center">
+                <span><i class="bi bi-dash-square fs-3 me-2"></i></span>
+                <input class="text-center me-2" type="" value="1" />
+                <span><i class="bi bi-plus-square fs-3"></i></span>
+              </div>
+              <div class="col-8">
+                <a href="./carts.html"><button class="btn btn-success">ADD TO CARD</button></a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <h5 class="sizes me-2">Loại sách:</h5>
+              <select class="form-select w-25" aria-label="Default select example">
+                <option value="1">Mới</option>
+                <option value="2">Cũ</option>
+                <option value="3">Tái bản</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="col-lg-12 mt-3">
+        <div class="product_details_desc">
+          <h6 class="mb-3 fs-4">Thông tin sản phẩm</h6>
+          <p>
+            Cuộc hành trình chữa lành không phải luôn dễ dàng, nhưng với sự hỗ trợ từ những cuốn sách chất lượng, chúng
+            ta có thể bước đi một cách tự tin hơn trên con đường hồi phục. Những câu chuyện thành công, những phương
+            pháp thực tiễn và những lời khuyên từ những người đã trải qua những trải nghiệm tương tự sẽ giúp chúng ta
+            vượt qua những thách thức và tìm thấy lại bình an trong tâm hồn.
+          </p>
+          <p>
+            Thông qua việc đọc và tìm hiểu qua những cuốn sách này, chúng ta có thể trang bị cho bản thân những công cụ
+            cần thiết để đối mặt với cuộc sống một cách mạnh mẽ và tích cực hơn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="related-product container mt-5">
+    <div class="row mb-3">
+      <div class="col-lg-12 text-center">
+        <h2>Sản phẩm tương tự</h2>
+      </div>
+    </div>
+    <div class="border border-dark-subtle rounded-3 bg-white p-3">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100 p-3">
+            <img src="/images/toi-la-ai.jpg" class="h-100 w-100" alt="..." />
+            <div class="card-body h-100">
+              <h5 class="card-title text-center text-capitalize">
+                Tôi là ai
+              </h5>
+              <p class="card-text text-capitalize text-center">
+                {{p.description}}
+
+              </p>
+            </div>
+            <div class="card-footer text-center bg-white d-flex justify-content-between">
+              <small class="text-b">40.000 đ</small>
+              <a href="./detail.html"><button class="card-button rounded-2 text-white text-capitalize">
+                  Xem chi tiết
+                </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <img src="/images/image_195509_1_36793.jpg" class="h-100 w-100" alt="..." />
+            <div class="card-body h-100">
+              <h5 class="card-title text-center text-capitalize">
+                Nhà giả kim
+              </h5>
+              <p class="card-text text-capitalize text-center">
+                {{p.description}}
+
+              </p>
+            </div>
+            <div class="card-footer text-center bg-white d-flex justify-content-between">
+              <small class="text-b">50.000 đ</small>
+              <button class="card-button rounded-2 text-white text-capitalize">
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <img src="/images/chx-kip-lon-da-phai-truong-thanh.jpg" class="h-100 w-100" alt="..." />
+            <div class="card-body h-100">
+              <h5 class="card-title text-center text-capitalize">
+                Chưa kịp lớn đã phải trưởng thành
+              </h5>
+              <p class="card-text text-capitalize text-center">
+                {{p.description}}
+
+              </p>
+            </div>
+            <div class="card-footer text-center bg-white d-flex justify-content-between">
+              <small class="text-b">65.000 đ</small>
+              <button class="card-button rounded-2 text-white text-capitalize">
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <img src="/images/image_217480.jpg" class="h-100 w-100" alt="..." />
+            <div class="card-body h-100">
+              <h5 class="card-title text-center text-capitalize">
+                Cây cam ngọt của tôi
+              </h5>
+              <p class="card-text text-capitalize text-center">
+                {{p.description}}
+
+              </p>
+            </div>
+            <div class="card-footer text-center bg-white d-flex justify-content-between">
+              <small class="text-b">45.000 đ</small>
+              <button class="card-button rounded-2 text-white text-capitalize">
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

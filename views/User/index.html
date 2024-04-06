@@ -1,0 +1,152 @@
+<main class="overflow-hidden">
+  <div class="slide-show">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <img src="/images/banner.png" class="d-block w-100" alt="" id="anh" />
+      </div>
+      <button class="carousel-control-prev" type="button" id="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" id="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="endow mt-5 mb-4 row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-3">
+            <div class="fs-3">
+              <img src="/images/cashback_logo.webp" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="ed-content col-9 align-content-end">
+            <h3>Hoàn tiền 10%</h3>
+            <p>Khi thanh toán qua Viettel money</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-3">
+            <div class="fs-3">
+              <img src="/images/sale_logo.webp" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="ed-content col-9 align-content-end">
+            <h3>Sale sập sàn</h3>
+            <p>Mua là có quà</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-3">
+            <div class="fs-3">
+              <img src="/images/health_logo.webp" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="ed-content col-9 align-content-end">
+            <h3>An toàn 100%</h3>
+            <p>Sản phẩm đến từ thiên nhiên</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="row content">
+      <div class="col-sm-3">
+        <div class="list-group rounded-3">
+          <p href="#" class="list-group-item list-group-item-action title-ctgr" aria-current="true">
+            <i class="bi bi-list-stars text-white"> Danh mục sản phẩm</i>
+          </p>
+          <a href="./category.html" class="list-group-item list-group-item-action">Chuyện ng</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách tâm lý</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách chữa lành</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách phát triển bản thân</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách kinh doanh</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách khoa học</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách tự nhiên và môi trường</a>
+          <a href="#" class="list-group-item list-group-item-action">Sách lịch sử</a>
+        </div>
+      </div>
+      <div class="col-sm-9 border border-dark-subtle rounded-3 bg-white p-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div ng-repeat="p in products|limitTo:6" class="col">
+            <div ng-click="onDetail(p.id)" class="card h-100 p-3">
+              <img src="/images/{{p.image}}" class="h-100 w-100" alt="..." />
+              <div class="card-body h-100">
+                <h5 class="card-title text-center text-capitalize">
+                  {{p.name}}
+                </h5>
+                <p class="card-text text-capitalize text-center">
+                  {{p.description}}
+                </p>
+              </div>
+              <div class="card-footer text-center bg-white d-flex justify-content-between">
+                <small class="text-b">{{p.price}} đ</small>
+                <a ng-click="onDetail(p.id)"><button class="card-button rounded-2 text-white text-capitalize">
+                    Xem chi tiết
+                  </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //hot-event -->
+  <div class="hot-event mt-5">
+
+    <div class="row text-center d-flex align-items-center mt-5">
+      <span class="col-4">
+        <hr />
+      </span>
+      <h2 class="col-4 text-uppercase">Sản Phẩm Nổi Bật</h2>
+      <span class="col-4">
+        <hr />
+      </span>
+    </div>
+    <!-- hot content -->
+    <div class="container hotdeal">
+      <div class="row mt-5">
+        <div class="col-sm-3">
+          <!-- <img
+            class="w-100 rounded-3"
+            src="/images/banner_hotdel_tea.jpg"
+            alt=""
+          />
+          <img
+            class="w-100 rounded-3"
+            src="/images/banner_hotdeal_listcoffee.webp"
+            alt=""
+          /> -->
+        </div>
+        <div class="col-sm-9 border border-dark-subtle rounded-3 bg-white p-3">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div ng-repeat="p in products|orderBy:'-price'|limitTo:6" class="col">
+              <div ng-click="onDetail(p.id)" class="card h-100 p-3">
+                <img src="/images/{{p.image}}" class="h-100 w-100" alt="..." />
+                <div class="card-body h-100">
+                  <h5 class="card-title text-center text-capitalize">
+                    {{p.name}}
+                  </h5>
+                  <p class="card-text text-capitalize text-center">
+                    {{p.description}}
+                  </p>
+                </div>
+                <div class="card-footer text-center bg-white d-flex justify-content-between">
+                  <small class="text-b">{{p.price}} đ</small>
+                  <a ng-click="onDetail(p.id)"><button class="card-button rounded-2 text-white text-capitalize">
+                      Xem chi tiết
+                    </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
